@@ -121,7 +121,6 @@ section#my-contact {
 }
 
 .bottom {
-
 	background-color: black;
 	color: grey;
 }
@@ -145,5 +144,33 @@ section#my-contact {
 		margin: 10px;
 	}
 
+}
+
+@media (max-width: 400px) {
+	a.navbar-brand {
+		font-size: 15px;
+	}
+	.app-names {
+		font-size: 18px;
+	}
+	.contact-info h1 {
+		font-size: 25px;
+	}
+	.contact-info h2 {
+		font-size: 20px;
+	}
+	.bottom {
+		font-size: 10px;
+	}
+	img.profile-pic {
+		max-width: 200px;
+	}
+	
+}
+
+@media (max-width: 340px) {
+	.about-me {
+		font-size: 15px;
+	}
 }
 
