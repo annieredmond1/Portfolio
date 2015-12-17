@@ -11,21 +11,22 @@ body {
 	color: white !important;
 }
 .navbar {
-	background-color: black;
-	border: 2px solid black;
+	background-color: #333;
 }
 
 li a {
 	color: white !important;
 	font-size: 18px;
-}
-.for-background  {
-	background: linear-gradient(to left top, white 0%,white 50%,#000000 50%,black 50%,black 100%);
-	padding-bottom: 200px;
-	margin-top: 65px;
-	margin-left: -15px;
+	list-style: none;
 }
 
+li {
+	list-style: none;
+}
+
+ul {
+	margin-left: 20px;
+}
 .for-background h1, h2 {
 	color: white;
 }
@@ -45,28 +46,27 @@ a {
 
 }
 #about {
+	margin-top: 50px;
 	padding-top: 50px;
 	color: white;
 	font-size: 20px;
-	padding-bottom: 250px;
-	background: linear-gradient(to left top, black 0%,black 50%,#000000 50%,white 50%,white 100%);
+	padding-bottom: 200px;
+	background: linear-gradient(to left top, #BFF7A9 0%,#BFF7A9 50%,#BFF7A9 50%,white 50%,white 100%);
 	width: 100%;
 }
 
 
 img.profile-pic {
-	max-width: 350px;
-	margin-top: 55px;
-	border: 2px solid black;
-	box-shadow: 5px 5px 5px black;
+	width: 275px;
 	border-radius: 50%;
-	
+	margin-top: 55px;
+	box-shadow: 5px 5px 5px #888;
 }
 
 .about-me {
 	margin-top: 400px;
-	color: white;
-	background-color: black;
+	color: #333;
+	background-color: #BFF7A9;
 }
 
 #projects {
@@ -77,12 +77,10 @@ img.profile-pic {
 }
 
 .thumbnail .app-pic {
-	border: 3px solid black;
+	box-shadow: 5px 5px 5px #888;
 	max-width: 200px;
 	max-height: 300px;
-	float: left;
-	margin-right: 20px;
-
+	margin: 0 auto;
 }
 .thumbnail .caption {
 	font-weight: bold;
@@ -94,14 +92,17 @@ img.profile-pic {
 }
 .thumbnail {
 	max-width: 600px;
-	min-height: 500px;
-	box-shadow: 5px 5px 5px black;
-	border: 3px solid black;
+	min-height: 800px;
+	box-shadow: 5px 5px 5px #888;
 	margin: 50px;
 
 }
 .page-header{
 	padding-bottom: 50px;
+}
+
+#savitImg {
+	border: 1px solid #888;
 }
 #my-contact a {
 	color: white;
@@ -116,20 +117,17 @@ section#my-contact {
 	margin-top: 120px;
 	margin-bottom: 50px;
 	border-radius: 50%;
-	background-color: black;
+	background-color: #333;
 	min-height: 600px;
 	padding-top: 150px;
 }
 
 .bottom {
-	background-color: black;
-	color: grey;
+	height: 50px;
+	padding: 20px;
+	background-color: #333;
+	color: #fff;
 }
-.bottom a {
-	color: grey !important;
-}
-
-
 
 @media (max-width: 600px) {
 	#about {
@@ -172,6 +170,9 @@ section#my-contact {
 @media (max-width: 340px) {
 	.about-me {
 		font-size: 15px;
+	}
+	a.navbar-brand {
+		font-size: 14px;
 	}
 }
 
