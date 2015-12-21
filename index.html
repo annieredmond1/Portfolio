@@ -9,7 +9,8 @@
 <!-- VENDOR SCRIPTS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 
 <!-- STYLESHEETS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -17,205 +18,12 @@
 <link rel="stylesheet" href="css/main.css">
 
 <!-- APPLICATION SCRIPTS -->
-<script src="js/scripts.js"></script>
+<script src="js/app.js"></script>
 	
 </head>
 <body ng-controller="MainCtrl">
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><strong><big>Annie Redmond:</big></strong> Web Developer</a>
-      
-    </div>
-    <div class="collapse navbar-collapse" id="menu-collapse">  
-        <ul class="nav navbar-nav navbar-right pull-right">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#my-contact">Contact</a></li>
-        </ul>
-     </div>
-  </div>
-</nav> 
-<!-- <div class="for-background" -->
-	<!-- <div class="heading text-left"> -->
-    <!-- <div class="row"> -->
-      <!-- <div class="col-xs-4"> -->
-  			<!-- <h1>Annie Redmond</h1> -->
-  			<!-- <h2>Full-stack Developer</h2> -->
-        <!-- <br> -->
-          <!-- <div class="col-xs-2"> -->
-            <!-- <a href="https://www.linkedin.com/in/annieredmond1"><img class="icon" src="./images/linkedin.png"></a> -->
-          <!-- </div> -->
-          <!-- <div class="col-xs-2"> -->
-            <!-- <a href="https://github.com/annieredmond1"><img class="icon" src="./images/github.png"></a> -->
-          <!-- </div> -->
-          <!-- <div class="col-xs-2"> -->
-            <!-- <a href="https://medium.com/@annieredmond11"><img class="icon" src="./images/medium.png"></a> -->
-          <!-- </div> -->
-      <!-- </div> -->
-    <!-- </div> -->
-	<!-- </div> -->
-	<!-- <div class="container">
-		<div class="row menu">
-			<div class="col-xs-2 col-xs-offset-3">
-				<h3><a href="#about">About</a></h3>
-			</div>
-			<div class="col-xs-2">
-				<h3><a href="#projects">Projects</a></h3>
-			</div>
-			<div class="col-xs-2">
-				<h3><a href="#my-contact">Contact</a></h3>
-			</div>
-		</div>
-	</div> -->
-
-  <section id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 pull-left">
-          <img class="profile-pic" src="http://i.imgur.com/w7ixn5O.jpg?1">  
-        </div>
-      <div class="row">
-        <div class="col-md-6 col-sm-4 pull-right about-me">
-          <p>I'm a full-stack web developer in San Francisco, CA.  I love creating web applications and exploring new technologies and I'm passionate about finding new ways to use technology to help others.  The jury's still out on which stack I like more, Ruby on Rails or Javascript.  With either stack I specialize in the back-end development.
-          <p>
-        </div>
-      </div>
-        
-      </div>
-    </div>
-  </section>
-  <section id="projects">
-  <div class="page-header text-center"> 
-    <h1>Projects</h1>
-    <div class="col-md-8 col-md-offset-2">
-      <h3 class="app-names">Savit App -- Prayer Bond -- Travel Chatter -- Together App</h3>
-    </div>
-  </div>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="thumbnail">
-          <a href="https://savitapp.herokuapp.com/">
-          <img class="app-pic" id="savitImg" src="./images/savit-app.png" alt="Savit App">
-          </a>
-          <div class="caption">
-            
-            <p><big>Savit App</big> helps users achieve their savings goals by providing a simple platform to track expenses.  Users can monitor their performance to stay movtivated to save!</p>
-            <p>My responsibities:</p>
-            <ul>
-              <li>Setup models and routes in the back end</li>
-              <li>Wrote functions to track user's daily spending and performance</li>
-              <li>Created chart for users to view performance</li>
-            </ul>
-            <p>Technologies used:</p>
-            <ul>
-              <li>Ruby on Rails</li> 
-              <li>Postrges</li>
-              <li>Jquery</li>
-            </ul>
-            <a role="button" class="btn btn-default" href="http://savitapp.herokuapp.com/">View website</a>
-            <a role="button" class="btn btn-default" href="https://github.com/annieredmond1/savit">View on Github</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">  
-        <div class="thumbnail">
-          <a href="http://prayer-bond.herokuapp.com/">
-          <img class="app-pic" src="./images/prayer-bond.png" alt="Prayer Bond">
-          </a>
-          <div class="caption">
-            
-            <p><big>Prayer Bond</big> increases the communication between missionaries and those praying for them.  Instead of a one-way monthly email, Prayer Bond allows users to easily manage prayer requests and see how often they are being prayed for.</p>
-            <p>My responsibities:</p>
-            <ul>
-              <li>I did all back end and front end development for this app.</li>
-            </ul>
-            <p>Technologies used:</p>
-            <ul>
-              <li>Javascript</li> 
-              <li>Node.js</li>
-              <li>Express</li>
-              <li>Mongo/Mongoose</li>
-            </ul>
-            <a role="button" class="btn btn-default" href="http://prayer-bond.herokuapp.com/">View website</a>
-            <a role="button" class="btn btn-default" href="https://github.com/annieredmond1/prayer-bond">View on Github</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">  
-        <div class="thumbnail">
-          <a href="http://travel-chatter.herokuapp.com/">
-          <img class="app-pic" src="./images/travel-chatter.png" alt="Travel Chatter">
-          </a>
-          <div class="caption">
-            
-            <p><big>Travel Chatter</big> is a place for people to post about their experiences in any city around the world.  Before you take your next vacation make sure to check out the city on travel chatter and find out about cool new spots to visit!</p>
-            <p>My responsibities:</p>
-            <ul>
-              <li>Set up routes and models for the posts and cities.</li>
-              <li>Use Embed Google API to get maps of each city.</li>
-            </ul>
-            <p>Technologies used:</p>
-            <ul>
-              <li>Ruby on Rails</li> 
-              <li>Postgres</li>
-            </ul>
-            <a role="button" class="btn btn-default" href="http://travel-chatter.herokuapp.com/">View website</a>
-            <a role="button" class="btn btn-default" href="https://github.com/annieredmond1/Travel-chatter">View on Github</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">  
-        <div class="thumbnail">
-          
-          <img class="app-pic" src="./images/togetherapp.png" alt="Together App">
-          
-          <div class="caption">
-            
-            <p><big>Together App</big> helps small groups stay connected during the week through prayer.  Members of the group can post their prayer requests, which takes the responsibility off the group leader.  Members can then check the app during their prayer time throughout the week to stay connected with the needs of the group.  This app was created at a weekend-long hackathon and is not yet complete.</p>
-            <p>My responsibities:</p>
-            <ul>
-              <li>Setup the front end Javascript, HTML and CSS.</li>
-              <li>Do all back end work, set up routes and the database.</li>
-            </ul>
-            <p>Technologies used:</p>
-            <ul>
-              <li>Javascript</li> 
-              <li>Node.js</li>
-              <li>Express</li>
-              <li>Mongo/Mongoose</li>
-            </ul>
-            <a role="button" class="btn btn-default" href="https://github.com/annieredmond1/Together-app">View on Github</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
- 
-
-  <section id="my-contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3 text-center contact-info">
-          <h1>Annie Redmond</h1>
-          <br>
-          <h2><a href="mailto:annieredmond1@gmail.com">annieredmond1@gmail.com</a>
-          <br><br><a href="tel:+1-615-380-1068">615-380-1068</a></h2>
-          <br>
-          <br>
-            <a href="https://www.linkedin.com/in/annieredmond1"><img class="icon" src="./images/linkedin.png"></a>
-            <a href="https://github.com/annieredmond1"><img class="icon" src="./images/github.png"></a>
-            <a href="https://medium.com/@annieredmond11"><img class="icon" src="./images/medium.png"></a>
-        </div>
-      </div>
-    </div>
-  <div class="bottom text-center">© Annie Redmond 2015</div>
-</section>
+<ng-include src="'templates/navbar'"></ng-include>
+<div ng-view="ng-view"></div>
+  
 </body>
 </html>
