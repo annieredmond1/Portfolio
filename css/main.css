@@ -12,7 +12,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
+	
 }
 
 .navbar {
@@ -114,27 +114,29 @@ a {
 #savitImg {
 	border: 1px solid #888;
 }
-#my-contact a {
-	color: white;
+
+#my-contact {
+	margin-top: 50px;
+	padding-top: 50px;
+	font-size: 20px;
+	padding-bottom: 200px;
+	width: 100%;
 }
 
-section#my-contact {
-	background: white;
-	color:white;
-}
 .contact-info {
+	margin-top: 300px;
+	color: #D9D9D9;
+	background-color: #1A1A1A;
+	border-radius: 5px;
+}
 
-	margin-top: 120px;
-	margin-bottom: 50px;
-	border-radius: 50%;
-	background-color: #333;
-	min-height: 600px;
-	padding-top: 150px;
+.contact-info a {
+	color: #D9D9D9;
 }
 
 .bottom {
 	height: 50px;
-	padding: 20px;
+	margin-bottom: -200px;
 	background-color: #333;
 	color: #fff;
 }
