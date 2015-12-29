@@ -6,7 +6,6 @@ html, body {
 body {
 	font-family: 'Roboto', sans-serif;
 	color: black;
-	padding-bottom: 100px;
 	background: url('http://i.imgur.com/vucOLxg.png') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -20,9 +19,8 @@ body {
 	border: none !important;
 }
 
-#home {
-	
-  
+.navbar-right li {
+	background-color: white;
 }
 
 #home h4{
@@ -38,25 +36,26 @@ body {
 	padding: 10px;
 }
 
+.arrow {
+	font-size: 40px;
+	margin-top: 700px;
+}
+
 #about {
-	margin-top: 50px;
-	padding-top: 50px;
 	font-size: 20px;
-	padding-bottom: 200px;
+	padding: 50px 0px;
 	width: 100%;
 }
 
 .about-me {
-	margin-top: 400px;
+	margin-top: 200px;
 	color: #D9D9D9;
 	background-color: #1A1A1A;
 	border-radius: 5px;
 }
 
-li {
-	color: white;
-	font-size: 18px;
-	list-style: none;
+.about-text {
+	padding: 50px 100px;
 }
 
 li {
@@ -81,13 +80,49 @@ a {
 
 #projects {
 	padding-top: 100px;
-	background-color: white;
 	color: black!;
 
 }
 
-.thumbnail .app-pic {
-	box-shadow: 5px 5px 5px #888;
+img {
+	height: 470px;
+	width: 876px;
+	border-radius: 5px;
+	transform: translate(-15px);
+}
+
+.project-div {
+	height: 470px;
+	width: 876px;
+	position: relative;
+	margin-top: 200px;
+}
+
+.project-description {
+	background: rgba(0,0,0,0.9);
+  color: white;
+  display: table;
+  height: 470px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 876px;
+  opacity: 0;
+  border-radius: 5px;
+  padding: 10px 100px 10px 100px;
+  font-size: 16px;
+  word-wrap: normal;
+}
+
+.project-div:hover .project-description {
+	opacity: 1;
+}
+
+.project-button {
+	margin-right: 30px;
+}
+
+/*.thumbnail .app-pic {
 	max-width: 200px;
 	max-height: 300px;
 	margin: 0 auto;
@@ -103,15 +138,14 @@ a {
 .thumbnail {
 	max-width: 600px;
 	min-height: 800px;
-	box-shadow: 5px 5px 5px #888;
 	margin: 50px;
 
-}
+}*/
 .page-header{
 	padding-bottom: 50px;
 }
 
-#savitImg {
+.img-border {
 	border: 1px solid #888;
 }
 
@@ -136,55 +170,116 @@ a {
 
 .bottom {
 	height: 50px;
-	margin-bottom: -200px;
 	background-color: #333;
 	color: #fff;
 }
 
-@media (max-width: 600px) {
+/*ipad*/
+@media (max-width: 770px) {
+	.home-center {
+		margin-top: 450px;
+	}
 	#about {
-		padding-bottom: 0px;
+		padding-bottom: 100px;
 	}
 	.about-me {
-		margin-top: 100px;
+		margin-top: 400px;
 	}
-	.about-me p {
-		padding: 20px;
-	}
-	.thumbnail {
-		margin: 10px;
+	img {
+		height: 370px;
+		width: 600px;
 	}
 
+	.project-div {
+		height: 370px;
+		width: 600px;
+		margin-top: 390px;
+	}
+
+	.project-description {
+	  height: 370px;
+		width: 600px;
+	}
+
+	#my-contact {
+		padding-top: 400px;
+	}
 }
 
-@media (max-width: 400px) {
-	a.navbar-brand {
-		font-size: 15px;
+@media (max-width: 500px) {
+	.project-description {
+		padding: 10px;
+		width: 490px;
 	}
-	.app-names {
+	img {
+		width: 490px;
+	}
+	.project-div {
+		width: 490px;
+	}
+}
+
+/*iphone 6*/
+@media (max-width: 415px) {
+	a.navbar-brand {
 		font-size: 18px;
 	}
-	.contact-info h1 {
-		font-size: 25px;
+	.home-center {
+		margin-top: 350px;
 	}
-	.contact-info h2 {
-		font-size: 20px;
+	.about-me {
+		margin-top: 300px;
 	}
-	.bottom {
-		font-size: 10px;
+	.project-description {
+		width: 410px;
 	}
-	img.profile-pic {
-		max-width: 200px;
+	img {
+		width: 410px;
 	}
-	
+	.project-div {
+		width: 410px;
+		margin-top: 200px;
+	}
+	.project-button {
+	margin-right: 15px;
+}
+	#my-contact {
+		padding-top: 100px;
+	}
 }
 
+/*iphone 5*/
 @media (max-width: 340px) {
+	a.navbar-brand {
+		font-size: 14px;
+	}
+	.home-center {
+		margin-top: 250px;
+	}
 	.about-me {
 		font-size: 15px;
 	}
-	a.navbar-brand {
-		font-size: 14px;
+	.project{
+		margin-top: 200px;
+	}
+	.project-description {
+		width: 330px;
+		height: 270px;
+	}
+	img {
+		width: 330px;
+		height: 270px;
+	}
+	.project-div {
+		width: 330px;
+		height: 270px;
+	}
+	#my-contact {
+		padding-top: 0px; 
+		margin-top: 200px;
+	}
+	#my-contact h4, #my-contact .icon {
+		font-size: 20px;
 	}
 }
 
