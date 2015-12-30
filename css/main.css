@@ -16,11 +16,21 @@ body {
 
 .navbar {
 	background-color: rgba(255,255,255,0);
-	border: none !important;
 }
 
-.navbar-right li {
-	background-color: white;
+li {
+	list-style: none;
+	font-size: 16px;
+}
+
+.navbar ul {
+	margin-left: 20px;
+}
+
+
+a {
+	color: black;
+	text-decoration: none;
 }
 
 #home h4{
@@ -58,19 +68,6 @@ body {
 	padding: 50px 100px;
 }
 
-li {
-	list-style: none;
-}
-
-ul {
-	margin-left: 20px;
-}
-
-
-a {
-	color: black;
-	text-decoration: none;
-}
 
 .heading {
 	margin-left: 40px;
@@ -127,6 +124,10 @@ img {
 
 .project-button {
 	margin-right: 30px;
+}
+
+#projects img {
+	border: 1px solid grey;
 }
 
 /*.thumbnail .app-pic {
@@ -190,30 +191,42 @@ img {
 		padding-bottom: 100px;
 	}
 	.about-me {
-		margin-top: 400px;
+		margin-top: 300px;
 	}
 	img {
-		height: 370px;
-		width: 600px;
+		height: auto;
+		width: 100%;
 	}
 
 	.project-div {
 		height: 370px;
-		width: 600px;
-		margin-top: 390px;
+		width: 100%;
+		margin-top: 200px;
 	}
 
 	.project-description {
-	  height: 370px;
-		width: 600px;
+	  height: auto;
+		width: 100%;
 	}
 
 	#my-contact {
-		padding-top: 400px;
+		padding-top: 200px;
 	}
 }
 
 @media (max-width: 500px) {
+	.navbar ul {
+		background-color: white;
+	}
+	.home-center {
+		margin-top: 350px;
+	}
+	.about-me {
+		margin-top: 100px;
+	}
+	.about-text {
+		padding: 10px;
+	}
 	.project-description {
 		padding: 10px;
 		width: 490px;
@@ -223,6 +236,10 @@ img {
 	}
 	.project-div {
 		width: 490px;
+		margin-top: 100px;
+	}
+	#my-contact {
+		padding-top: 50px;
 	}
 }
 
@@ -233,9 +250,10 @@ img {
 	}
 	.home-center {
 		margin-top: 350px;
+		margin-bottom: 100px;
 	}
 	.about-me {
-		margin-top: 300px;
+		margin-top: 30px;
 	}
 	.project-description {
 		width: 410px;
@@ -245,13 +263,17 @@ img {
 	}
 	.project-div {
 		width: 410px;
-		margin-top: 200px;
+		margin-top: 10px;
+		margin-bottom: 90px;
 	}
 	.project-button {
 	margin-right: 15px;
 }
 	#my-contact {
-		padding-top: 100px;
+		padding-top: 40px;
+		margin-top: 0px;
+	}
+	.btn {
 	}
 }
 
@@ -266,12 +288,18 @@ img {
 	.about-me {
 		font-size: 15px;
 	}
-	.project{
-		margin-top: 200px;
+	.project-div {
+		margin-top: 0px;
+		margin-bottom: 10px;
 	}
 	.project-description {
 		width: 330px;
 		height: 270px;
+		font-size: 12px;
+		padding: 10px;
+	}
+	.project-description li {
+		font-size: 12px;
 	}
 	img {
 		width: 330px;
