@@ -20,7 +20,9 @@ document.body.addEventListener('click', function(event) {
 		var bodyRect = document.body.getBoundingClientRect();
 		var elemRect = elemDestination.getBoundingClientRect();
 		var topCoordinate = elemRect.top - bodyRect.top;
-		var winTop = 0;
+		//find top coordinate of the current window
+		var winTop = window.pageYOffset || document.documentElement.scrollTop;
+		console.log('wintop is ', winTop);
 		var limit = topCoordinate;
 		var timerId = setInterval(function() {
 			if(winTop < limit) {
